@@ -1,0 +1,14 @@
+#jj{
+    color: rgb(255, 55, 0);
+     font-size:3rem;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        padding: 4rem;
+        border: 10px solid black ;
+        margin: 4rem;
+    }
+
+   

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        *{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            transition: all 0.5s;
+
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background:linear-gradient(skyblue, rgb(187, 208, 223),white);
+            background-repeat: no-repeat;
+            /* background-size: 100%; */
+        }
+        .container{
+          
+           top: 250px;
+           bottom: 0;
+        }
+        .colla{
+            top:100px;
+
+        }
+        .coal{
+            top: 50px;
+            right: 160px;
+        }
+        .coal2{
+            left: 160px;
+
+        }
+        button{
+            margin: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 25px;
+        }
+        p{
+            /* opacity: 0%; */
+            z-index: 3;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 50px;
+            border: 1px solid rgb(132, 129, 129);
+        }
+        /* .p1{
+            opacity: 0%;
+            animation: talk 5s cubic-bezier(1,1,1,1);
+        }
+        @keyframes talk{
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        .p2{
+            opacity: 0%;
+            animation: talk1 5s cubic-bezier(1,1,1,1) 5s;
+        }
+        @keyframes talk1{
+           
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        .p3{
+            opacity: 0%;
+            animation: talk2 5s cubic-bezier(1,1,1,1) 10s;
+        }
+        @keyframes talk2{
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        .p4{
+            opacity: 0%;
+            animation: talk3 5s cubic-bezier(1,1,1,1) 15s;
+        }
+        @keyframes talk3{
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        p:hover{
+            opacity: 100%;
+        } */
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col colla col-6">
+                <div class="row">
+                    <div class="col col-6">
+                        <img src="anima-removebg-preview.png" alt=""  onclick="myFunction()">
+                    </div>
+                    <div class="col coal col-6">
+                        <p class="p1" id="goat">
+                            
+                       
+                        <p class="p3" id="goat3">
+                            <button type="button" onclick="myForce()"></button>
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col col-6">
+                <div class="row">
+                    <div class="col coal2 col-6">
+                        <p class="p2" id="goat1">
+                            <!-- <button type="button" onclick="myTime()"></button><br> -->
+                        </p>
+                        
+                        <p class="p4" id="goat4">
+                           <button type="button" onclick="myToken()"></button>
+                        </p>
+
+                        
+                    </div>
+                    <div class="col col-6">
+                        <img src="anima1-removebg-preview.png" alt="" style="float: right;" onclick="myTime()">
+                    </div>
+                </div>
+                
+                
+            </div>`
+        </div>
+        <div class="box">
+
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            document.getElementById('goat').innerHTML='Hi Dude, do you mind me asking what says the time?';
+        }
+        function myTime(){
+            document.getElementById('goat1').innerHTML='Hi, oh i dont mind, ........ the time says ' + new Date();
+        }
+        function myForce(){
+            document.getElementById('goat3').innerHTML='thanks Man!';
+        }
+        function myToken(){
+            document.getElementById('goat4').innerHTML='Your welcome ';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="font/css/all.css">
+    <style>
+        .general{
+            padding: 4rem;
+            width: 100%;
+            
+        }
+        .footer ul{
+            list-style: none;
+
+        }
+        #shoe{
+            width: 300px;
+            height: 35px;
+            border-radius:20px ;
+            border: none;
+            padding-left: 10px;
+        }
+        .footer button{
+            padding: 6px;
+            border-radius: 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: -50px;
+        }
+        .footer{
+            bottom: 0;
+            position: relative;
+            background: rgba(0,0,0,0.4);
+        }
+        .content{
+            box-shadow: 5px 5px 5px black;
+        }
+        .navbar{
+            background: rgba(0,0,0,0.4);
+            position: fixed;
+            padding-left:4rem ;
+            padding-right: 4rem;
+            width: 100%;
+        
+            
+           
+            
+        }
+        .details{
+            border-top: 4px solid orange;
+            background-color: white;
+        }
+        body{
+            background-image: url("bg.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      
+        .welcome{
+            background-image: url("bakg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: relative;
+            object-fit: cover;
+            text-align: center;
+            padding: 7rem;
+            color: white;
+            animation: grow 10s infinite ease-out;
+        }
+        @keyframes grow{
+            0%{background-image: url("1-disney-cartoons.jpg");}
+            50%{background-image: url("bakg.jpg");}
+            100%{background-image: url("background.jpg");}
+        }
+        
+        .welcome h1{
+            font-size: 6rem;
+           
+        }
+        .welcome p{
+            color: orange;
+            font-size: 0.95rem;
+        }
+       
+        .row{
+            text-align: center;
+        }
+        .col{
+            padding: 2rem;
+            color: orange;
+        }
+        .row img{
+            width: 200px;
+            height: 350px;
+            box-shadow: 5px 5px 5px rgb(56, 56, 56);
+            animation: rol 0.5s ease-in;
+            transition: all 0.5s;
+            
+        }
+        .row1 img{
+            width: 85%;
+        height: 70%;
+            box-shadow: none;
+            border-radius: 20px;
+
+        }
+        .row3 .col8{
+            margin-top: 4rem;
+        }
+        .collar{
+            color: orange;
+            background-color: white;
+            text-align: center;
+        }
+        img:hover{
+            width: 100%;
+            height: 100%;
+        }
+        .row3{
+            padding-right: 4rem;
+            padding-left: 4rem;
+        }
+        .row3 .col9 img{
+            width: 300px;
+            height: 500px;
+        }
+        .row3 img{
+            box-shadow: none;
+        }
+        .foot img{
+            box-shadow: none;
+            width: 220px;
+            height: 190px;
+        }
+        .row3 img:hover{
+            width: 90%;
+            height: 90%;
+        }
+        .row3 .elo img{
+            animation: change 6s ease-out infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes change{
+            0%{ background-image: url("34.jpg");}
+            50%{background-image: url("4.jpg");}
+            100%{background-image:url("18.jpg");}
+
+        }
+        .row3 .elo1 img{
+            animation: come 6s ease-out infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes come{
+            0%{ background-image: url("4.jpg");}
+            50%{background-image: url("18.jpg");}
+            100%{background-image:url("34.jpg");}
+
+        }
+        .row3 .elo2 img{
+            animation: carry 6s ease-out infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes carry{
+            0%{ background-image: url("18.jpg");}
+            50%{background-image: url("34.jpg");}
+            100%{background-image:url("4.jpg");}
+
+        }
+        .imag{
+            margin-top: -100px;
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 0%;
+        }
+        .iml{
+            padding-bottom: 0%;
+        }
+        .imag img{
+            width: 120px;
+            height: 120px;
+            
+        }
+
+      
+        @keyframes rol{
+            0%{transform: translatey(30px);}
+        }
+        .bubble{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        .welcome h1{
+            color: orange;
+            font-weight: 100;
+        }
+        .welcome h1 span{
+            color: white;
+            font-weight: 400;
+            
+        }
+        
+     
+        .colly{
+            background-color: white;
+            text-align: center;
+        }
+        .colly h3{
+            font-size: 40px;
+        }
+        .colly p{
+            font-size: 20px;
+        }
+        @media(max-width:650px){
+            .welcome{
+                background: no-repeat;
+                margin: 0;
+                padding: 0;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .welcome h1{
+           
+            text-align: center;
+            font-size: 3rem;
+           
+        }
+        .content{
+            box-shadow: none;
+        }
+      
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: orange;">KiddY's<span style="color: white;">show</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" style="color: orange; font-size: 16px;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: orange; font-size: 16px;">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:orange;font-size: 16px;">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: orange;font-size: 16px;">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: orange;font-size: 16px">Sign up</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+   <div class="general">
+    
+       <div class="content">
+        
+          <div class="welcome">
+              <h1>KiddY's<span>show</span></h1>
+              <p style="color: white; font-size: 1.5rem; font-weight: 100;">unlimited cartons/kids shows</p>
+          </div>
+          <div class="details">
+              <div class="bubble">
+                  <h2 style="border-bottom: 2px solid orange;">All</h2>
+                  <form action="">
+                    <p>search
+                        <input type="search">
+                    </p>
+                  </form>
+                  
+              </div>
+              <div class="row">
+                  <div class="col col-lg-3 col-12">
+                      <img src="1.jpg" alt="">
+                      <p>lovely lololo</p>
+                      
+
+                  </div>
+                  <div class="col col-lg-3 col-12">
+                      <img src="2.jpeg" alt="">
+                      <p>lovely lololo</p>
+                     
+
+                  </div>
+                  <div class="col col-lg-3 col-12">
+                      <img src="3.jpg" alt="">
+                      <p>lovely lololo</p>
+                      
+                  </div>
+                  <div class="col col-lg-3 col-12">
+                      <img src="4.jpg" alt="">
+                      <p>lovely lololo</p>
+                     
+                      
+                  </div>
+                  <div class="col col-lg-3 col-12">
+                    <img src="13.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="14.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="15.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="16.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+              </div>
+              <div class="bubble">
+                <h2 style="border-bottom: 2px solid orange;">Adventure</h2>
+              
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-12">
+                    <img src="17.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="18.jpg" alt="">
+                    <p>lovely lololo</p>
+                   
+
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="19.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="20.jpg" alt="">
+                    <p>lovely lololo</p>
+                   
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                  <img src="21.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="22.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="23.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="24.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+            </div>
+            <div class="bubble">
+                <h2 style="border-bottom: 2px solid orange;">Adventure</h2>
+              
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-12">
+                    <img src="25.jpeg" alt="">
+                    <p>lovely lololo</p>
+                    
+
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="26.jpg" alt="">
+                    <p>lovely lololo</p>
+                   
+
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="27.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="28.jpg" alt="">
+                    <p>lovely lololo</p>
+                   
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                  <img src="29.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="30.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="31.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="32.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+            </div>
+            <div class="bubble">
+                <h2 style="border-bottom: 2px solid orange;">Fairy Tales</h2>
+              
+            </div>
+            <div class="row">
+                <div class="col col-lg-3 col-12">
+                    <img src="9.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="7.png" alt="">
+                    <p>lovely lololo</p>
+                   
+
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="11.jpg" alt="">
+                    <p>lovely lololo</p>
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                    <img src="12.jpg" alt="">
+                    <p>lovely lololo</p>
+                   
+                    
+                </div>
+                <div class="col col-lg-3 col-12">
+                  <img src="5.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="6.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="35.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+              <div class="col col-lg-3 col-12">
+                  <img src="36.jpg" alt="">
+                  <p>lovely lololo</p>
+                  
+              </div>
+            </div>
+
+          </div>
+         <div class="colly">
+            <h3 style="color: orange;">One Subscription.</h3>
+            <p>A whole world of amazing features and benefits for your family</p> 
+            <div class="row row1">
+                <div class="col col-lg-3">
+                    <img src="logo1.png" alt="">
+                </div>
+                <div class="col col-lg-3">
+                    <img src="logo2.jpg" alt="">
+                </div>
+                <div class="col col-lg-3">
+                    <img src="latest.png" alt="">
+                </div>
+                <div class="col col-lg-3">
+                    <img src="logo3.jpg" alt="">
+                </div>
+            </div>
+             
+         </div>
+         <div class="collar">
+             <h3>Discover more Disney movies</h3>
+             <p>unlimeted movies & cartoons for your family</p>
+             <div class="row row3">
+                 <div class="col  col8 col-lg-4 col-12" >
+                    <div class="elo">
+                        <img src="" alt="">
+                    </div>
+                 </div>
+                 <div class="col  col9 col-lg-4 col-12">
+                     <div class="elo1">
+                        <img src="" alt="" width="500px" >
+                     </div>
+                 </div>
+                 <div class="col  col8 col-lg-4 col-12">
+                     <div class="elo2">
+                        <img src="" alt="">
+                     </div>
+                 </div>
+             </div>
+         </div>
+         
+
+   </div>
+   </div>
+   <div class="footer">
+    <div class="row foot">
+        <div class="col col-lg-3">
+            <img src="latest.png" alt="">
+        </div>
+        <div class="col col-lg-3">
+            <h3>About us</h3>
+            <ul>
+                <li>Channels</li>
+                <li>Service</li>
+                <li>Blog</li>
+                <li>workers</li>
+            </ul>
+        </div>
+        <div class="col col-lg-3">
+             <h3>Our Channels</h3>
+            <ul>
+                <li>Disney Junior</li>
+                <li>Bloom</li>
+                <li>CN</li>
+                <li>Nick</li>
+            </ul>
+        </div>
+        <div class="col col-lg-3">
+            <h3>contact us</h3>
+           <ul>
+               <li>Channels</li>
+               <li>Service</li>
+               <li>Blog</li>
+               <li>workers</li>
+           </ul>
+       </div>
+       <div class="imag">
+        <div class="iml">
+         <img src="rrr.png" alt="">
+        </div>
+        <div class="iml" style="margin-top: -100px; margin-left: 140px;">
+            <img src="rrr2.png" alt="">
+        </div>
+        <div class="iml" style="margin-top: 10px;">
+            <img src="rrr3.png" alt="">
+        </div>
+     </div>
+        <div class="col col-12">
+            <h2>Subscribe to our Newsletter</h2>
+            <form action="">
+                <p>
+                    <input type="email" placeholder="please enter your email" id="shoe">
+                    <button>subscribes</button>
+                  </p>
+            </form>
+        </div>
+        
+    </div>
+</div>  
+
+
+
+
+    <script src="bootstrap.js"></script>
+</body>
+</html>

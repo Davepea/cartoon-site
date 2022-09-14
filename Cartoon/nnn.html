@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        *{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            transition: all 0.5s;
+
+        }
+        html,body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background:linear-gradient(skyblue, rgb(187, 208, 223),white);
+            background-repeat: no-repeat;
+            /* background-size: 100%; */
+            animation: daily 10s cubic-bezier(1,1,1,1);
+        }
+        @keyframes daily{
+           0% {  background:linear-gradient(skyblue, rgb(187, 208, 223),white); }
+           50%{  background:linear-gradient(rgb(34, 69, 82), rgb(41, 148, 225),rgb(108, 175, 238));}
+           100%{ background: rgb(20, 20, 21);}
+       }
+        
+        .container{
+          
+           top: 60px;
+           bottom: 0;
+        }
+        .colla{
+            top:100px;
+
+        }
+        .coal{
+            top: 50px;
+            right: 160px;
+        }
+        .coal2{
+            left: 160px;
+
+        }
+        button{
+            margin: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 25px;
+        }
+        p{
+            /* opacity: 0%; */
+            z-index: 3;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 50px;
+            border: 1px solid rgb(132, 129, 129);
+        }
+        .p1{
+            opacity: 0%;
+            animation: talk 3s cubic-bezier(1,1,1,1);
+        }
+        @keyframes talk{
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        .p2{
+            opacity: 0%;
+            animation: talk1 3s cubic-bezier(1,1,1,1) 3s;
+        }
+        @keyframes talk1{
+           
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        .p3{
+            opacity: 0%;
+            animation: talk2 3s cubic-bezier(1,1,1,1) 6s;
+        }
+        @keyframes talk2{
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+        .p4{
+            opacity: 0%;
+            animation: talk3 3s cubic-bezier(1,1,1,1) 9s;
+        }
+        @keyframes talk3{
+            0%{opacity: 0%;}
+            50%{opacity: 50%;}
+            100%{opacity: 100%;}
+        }
+       .sun{
+           overflow: hidden;
+           background-color: gold;
+           width: 200px;
+           height: 200px;
+           border-radius: 200px;
+           /* box-shadow: 5, 5,  20px rgba(255, 217, 0, 0); */
+           animation: day-night 10s ease-out ;
+       }
+       @keyframes day-night{
+           0% { background-color:gold;}
+           50%{ background-color: orangered;}
+           100%{width: 150px; height: 150px; background:linear-gradient(white,transparent);  transform: translateX(40px);}
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="sun">
+
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col colla col-6">
+                <div class="row">
+                    <div class="col col-6">
+                        <img src="anima-removebg-preview.png" alt=""  >
+                    </div>
+                    <div class="col coal col-6">
+                        <p class="p1" id="goat">
+                            Hi Dude, do you mind me asking what says the time?
+                       
+                        <p class="p3" id="goat3">
+                            thanks Man!
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col col-6">
+                <div class="row">
+                    <div class="col coal2 col-6">
+                        <p class="p2" id="goat1">
+                            Hi, oh i dont mind, ........ the time says 2:52pm
+                        </p>
+                        
+                        <p class="p4" id="goat4">
+                            Your welcome 
+                        </p>
+
+                        
+                    </div>
+                    <div class="col col-6">
+                        <img src="anima1-removebg-preview.png" alt="" style="float: right;" >
+                    </div>
+                </div>
+                
+                
+            </div>`
+        </div>
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

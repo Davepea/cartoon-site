@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="surname">surname</p>
+    <button type="button" onclick="mySurname()">enter</button>
+    <p id="firstname">First name</p>
+    <button type="button" onclick="myFirstname()">enter</button>
+    <p id="Age">Your Age</p>
+    <button type="button" onclick="myAge()">enter</button>
+    <button type="button" onclick="myDetails()">View your details</button>
+   <p id="details"></p>
+   <p id="details1"></p>
+   <p id="details2"></p>
+   <p id="closedoor"></p>
+   <form action="">
+    <input type="text" id="inp-el">
+    <input type="submit" onclick="submitEl()" id="click-el">
+   </form>
+    
+   <button type="button" onclick="myShoe()">go home</button>
+   
+
+
+
+
+    <script src="jscon.js"></script>
+    <script>
+     let inpEl =  document.getElementById("inp-el")
+     let goatEl = inpEl.value
+     function submitEl(){
+        if (inpEl.value < 23){
+            alert("me and you")
+        }
+
+        else if(inpEl.value <= 30){
+            alert("come to me")
+        }
+
+     }
+    </script>
+</body>
+</html>

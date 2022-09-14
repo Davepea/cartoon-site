@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: gold;
+            text-align: center;
+        }
+        body{
+            padding: 2rem 4rem 2rem 4rem;
+           
+           
+        }
+        .general{
+            background: rgba(0,0,0,0.3);
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border: 5px solid white;
+
+
+        }
+        button{
+            background-color: rgb(8, 0, 0);
+            border: none;
+            color: white;
+        
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            transition: all 0.5s ease-out;
+            
+        }
+        button:hover{
+            padding:15px 25px 15px 25px;
+            background-color: white;
+            color:rgb(8, 0, 0 ) ;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            document.getElementById('work').innerHTML='stop working with me'
+        }
+    </script>
+</head>
+<body id="long">
+  <div class="general">
+    <h2>First javaascript code</h2>
+    <p id="coke">Welcome to lautech</p>
+    <button type="button" onclick='document.getElementById("coke").innerHTML="I love this shit"'>Click me</button>
+    <button type="button" onclick='document.getElementById("coke").innerHTML="Welcome to lautech"'>Return</button>
+
+    <h2>Using JS to get time</h2>
+    <button type="button" onclick="document.getElementById('cool').innerHTML=Date()">show me thee time</button>
+
+<p id="cool"> collapse</p>
+
+<button type="button" onclick="document.getElementById('cloth').src='light on.png' "> light on</button>
+<img src="light of.png" id="cloth" alt="" >
+<button type="button" onclick="document.getElementById('cloth').src='light of.png' "> light off</button><br><br>
+
+ 
+<button type="button" onclick="document.getElementById('long').style='background-color:red;' "> red</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:blue;' ">Blue</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:green;' ">Green</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:Yellow;' ">Yellow</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:purple;' "> Purple</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:orange;' "> Orange</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:orangered;' ">orangered</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:aqua;' "> Aqua</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:brown;' "> brown</button>
+<button type="button" onclick="document.getElementById('long').style='background-color:gold;' "> gold</button>
+
+<p id="work">work with me</p>
+<button type="button" onclick="myFunction()"> click me</button>
+<h1>using innerHTML to solve math</h1>
+<p class="inner"></p>
+<button type="button" onclick="documen.getElementById('inner').innerHTML= (5*8)">solve</button>
+<h2>using document.write to solve a math problem</h2>
+<button type="button" onclick="document.write(5+8)">solve</button>
+ 
+<button type="button" onclick="window.alert(5+8)">solve</button>
+<button type="button" onclick="window.print(5+8)">Print</button>
+<p id="col">sweet</p>
+<button type="button" onclick="document.getElementById('col').innerHTML='the correct answer is' +' '+ d ">solve</button>
+<p id="fm"> output</p>
+<p id="sm"></p>
+<p id="pm"></p>
+<p id="cm"></p>
+<p id="lm"></p>
+<p id="am"></p>
+<p id="cm"></p>
+<p id="shm"></p>
+<button type="button" onclick="myFunction()">go</button>
+  </div>
+
+  
+  
+
+
+
+  <script>
+      function myFunction(){
+          document.getElementById('fm').innerHTML='welcome to sunmence!'
+          document.getElementById('sm').innerHTML='welcome to sunmence!'
+          document.getElementById('pm').innerHTML='welcome to sunmence!'
+          document.getElementById('cm').innerHTML='welcome to sunmence!'
+          document.getElementById('lm').innerHTML='welcome to sunmence!'
+          document.getElementById('am').innerHTML='welcome to sunmence!'
+          document.getElementById('cm').innerHTML='welcome to sunmence!'
+          document.getElementById('shm').innerHTML='welcome to sunmence!'
+      }
+      let a, b, c, d;
+      a=1;
+      b=2;
+      c=3;
+      d= a + b + c;
+  </script>
+</body>
+</html>
